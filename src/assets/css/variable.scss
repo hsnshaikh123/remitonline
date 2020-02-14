@@ -1,0 +1,12 @@
+%select-box{
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, #ee0979), to(#ff6a00));
+    background: linear-gradient(90deg, #2daae1 0, #1b437f 100%);
+}
+%btn_bg{
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, #2daae1), to(#78bc57));
+    background: linear-gradient(90deg, #2daae1 0, #78bc57 100%);
+}
+
+$blue_color: #2daae1;
+$dark_blue_color: #1c4480;
+$light_blue_color: #2daae1;

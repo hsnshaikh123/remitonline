@@ -1,0 +1,274 @@
+<!-- <p>header works!</p> -->
+<!-- <div class="preloader">
+    <div class="loader">
+    <div class="shadow"></div>
+    <div class="box"></div>
+    </div>
+    </div> -->
+    <app-top-header></app-top-header>
+   
+        <div class="main-banner jarallax" data-jarallax='{"speed": 0.3}'>
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="banner-content mySlides">
+                                    <h1>Send money to the Philippines from the U.S</h1>
+                                    <p>See why our solution is the best way to tap this 586 billion $ money transfer business opportunity.</p>
+                                    <div class="banner-btn">
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                                <div class="banner-content mySlides">
+                                    <h1>Best way to send money to India from USA</h1>
+                                    <p>RemitOnline, is a one-stop shop for banks and other business entities with a host of modules</p>
+                                    <div class="banner-btn">
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                   
+
+                                <div class="money-transfer-form">
+                                    <form>
+                                        <div class="form-group">
+                                            <label>You Send</label>
+                                            <div class="money-transfer-field">
+                                                <input autocomplete="off" class="form-control" type="text" value="1,000">
+                                                <div class="amount-currency-select">
+                                                    <select style="display: none;">
+                                                        <option>USD</option>
+                                                        <option>EUR</option>
+                                                        <option>GBP</option>
+                                                        <option>BRL</option>
+                                                    </select>
+                                                    <div class="nice-select" [ngClass]="status ? 'open' : ''" tabindex="0" (click)="clickEvent()">
+                                                                <span class="current" >{{selectedCurrency}}</span>
+                                                        <ul class="list">
+                                                            <li *ngFor="let data of datalist" [attr.data-value]="data"  class="option" (click)="getvalue(data)"> {{ data }}</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="currency-info">
+                                            <div class="bar"></div><span><strong>62.3</strong> Exchange Rate</span><span><strong>$4.50</strong> Transition Fees</span></div>
+                                        <div class="form-group">
+                                            <label>Recipient gets</label>
+                                            <div class="money-transfer-field">
+                                                <input autocomplete="off" class="form-control" type="text" value="1,000">
+                                                <div class="amount-currency-select">
+                                                
+                                                    <div class="nice-select" tabindex="0" [ngClass]="statuss ? 'open' : ''" tabindex="0" (click)="clickEvents()">
+                                                        <span class="current" >{{selectedCurrencyt}}</span>
+                                                        <ul class="list">
+                                                            <li *ngFor="let data of datalist" [attr.data-value]="data"  class="option" (click)="getvalues(data)"> {{ data }}</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="money-transfer-info"><span>You could save vs banks <strong>1,010.32 USD</strong></span></div>
+                                        <button class="btn btn-primary" type="submit">Get Started</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="featured-boxes-area">
+                <div class="container">
+                    <div class="featured-boxes-inner">
+                        <div class="row m-0">
+                            <div class="col-lg-3 col-sm-6 col-md-6 p-0">
+                                <div class="single-featured-box">
+                                    <div class="icon color-fb7756"><i class="fas fa-piggy-bank"></i></div>
+                                    <h3>No Hidden Fees</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-6 p-0">
+                                <div class="single-featured-box">
+                                    <div class="icon color-facd60"><i class="fas fa-money-bill"></i></div>
+                                    <h3>Higher transaction limit</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-6 p-0">
+                                <div class="single-featured-box">
+                                    <div class="icon color-1ac0c6"><i class="fas fa-phone-volume"></i></div>
+                                    <h3>24X7 customer support</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-6 p-0">
+                                <div class="single-featured-box">
+                                    <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                                    <h3>Safe and Secure</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <section class="services-area ptb-70" style="display: none;">
+            <div class="container-fluid p-0">
+                <div class="overview-box">
+                    <div class="overview-content">
+                        <div class="content left-content">
+                            <h2>Large or enterprise level businesses</h2>
+                            <div class="bar"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <ul class="services-list">
+                                <li><span><i  class="flaticon-check-mark"></i> Corporate Cards</span></li>
+                                <li><span><i  class="flaticon-check-mark"></i> International Payments</span></li>
+                                <li><span><i  class="flaticon-check-mark"></i> Automated accounting</span></li>
+                                <li><span><i  class="flaticon-check-mark"></i> Request Features</span></li>
+                                <li><span><i  class="flaticon-check-mark"></i> Premium Support</span></li>
+                                <li><span><i  class="flaticon-check-mark"></i> Direct Debit</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="overview-image">
+                        <div class="image"><img alt="image" src="../../../assets/img/about.png">
+                            <div class="circle-img">
+                                <img alt="image" src="../../../assets/img/circle.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="how-it-works-area ptb-70">
+            <div class="container">
+                <div class="section-title">
+                    <h2>How Klob Works</h2>
+                    <div class="bar"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="single-how-it-works"><img alt="image" src="../../../assets/img/1.png">
+                            <h3>1. Register for free</h3>
+                            <p>Ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel adipiscing aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="single-how-it-works"><img alt="image" src="../../../assets/img/2.png">
+                            <h3>2. Choose an amount to send</h3>
+                            <p>Ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel adipiscing aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="single-how-it-works"><img alt="image" src="../../../assets/img/3.png">
+                            <h3>3. Add recipient’s bank details</h3>
+                            <p>Ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel adipiscing aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="single-how-it-works"><img alt="image" src="../../../assets/img/4.png">
+                            <h3>4. Verify your identity</h3>
+                            <p>Ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel adipiscing aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="single-how-it-works"><img alt="image" src="../../../assets/img/5.png">
+                            <h3>5. Pay for your transfer</h3>
+                            <p>Ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel adipiscing aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="single-how-it-works"><img alt="image" src="../../../assets/img/6.png">
+                            <h3>6. That’s it</h3>
+                            <p>Ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel adipiscing aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="ready-to-talk">
+            <div class="container">
+                <div class="ready-to-talk-content">
+                    <h3>Ready to talk?</h3>
+                    <p>Our team is here to answer your question about Klob</p><a class="btn btn-primary" href="#">Contact Us</a><span><a  href="#">Or, get started now with a free trial</a></span></div>
+            </div>
+        </section>
+        
+        <div class="partner-area">
+            <div class="container">
+                <h3>More that 586 million businesses and organizations use RemitOnline</h3>
+                <div class="partner-inner">
+                    <div class="row align-items-center">
+                         <div class="col-lg-2 col-sm-4 col-md-3 col-6">
+                                    <a href="#"><img alt="partner" src="../../../assets/img/logo/01.png"><img alt="partner" src="../../../assets/img/logo/01_hover.png"></a>
+                                </div>
+                                <div class="col-lg-2 col-sm-4 col-md-3 col-6">
+                                        <a href="#"><img alt="partner" src="../../../assets/img/logo/02.png"><img alt="partner" src="../../../assets/img/logo/02_hover.png"></a>
+                                </div>
+                                <div class="col-lg-2 col-sm-4 col-md-3 col-6">
+                                        <a href="#"><img alt="partner" src="../../../assets/img/logo/03.png"><img alt="partner" src="../../../assets/img/logo/03_hover.png"></a>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-4 col-md-3 col-6">
+                                            <a href="#"><img alt="partner" src="../../../assets/img/logo/04.png"><img alt="partner" src="../../../assets/img/logo/04_hover.png"></a>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-4 col-md-3 col-6">
+                                            <a href="#"><img alt="partner" src="../../../assets/img/logo/05.png"><img alt="partner" src="../../../assets/img/logo/05_hover.png"></a>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-4 col-md-3 col-6">
+                                                <a href="#"><img alt="partner" src="../../../assets/img/logo/06.png"><img alt="partner" src="../../../assets/img/logo/06_hover.png"></a>
+                                        </div>
+                                      
+                                      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="blog-area ptb-70">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>The News from Our Blog</h2>
+                        <div class="bar"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-blog-post">
+                                <div class="blog-image">
+                                    <a href="#"><img alt="image" src="../../../assets/img/01_blog.jpg"></a>
+                                    <div class="date"><i class="fa fa-calendar-alt"></i> September 15, 2019 </div>
+                                </div>
+                                <div class="blog-post-content">
+                                    <h3><a  href="#">Assocham Emerging digital technologies summit 2019</a></h3><span>by <a  href="#">admin</a></span>
+                                    <p>LastMile is a robust, state-of-the-art, block chain ready software which can be used by banks to manage their vostro business.Presently, the LastMile platform is being used by Kotak Mahindra Bank</p><a class="read-more-btn" href="#">Read More <i  class="fas fa-arrow-right"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-blog-post">
+                                <div class="blog-image">
+                                    <a href="#"><img alt="image" src="../../../assets/img/02_blog.jpg"></a>
+                                    <div class="date"><i class="fa fa-calendar-alt"></i> September 17, 2019 </div>
+                                </div>
+                                <div class="blog-post-content">
+                                    <h3><a  href="#">Deloitte India’s Technology Fast 50 Awards 2018</a></h3><span>by <a  href="#">admin</a></span>
+                                    <p>Avenues Payments also successfully partnered with Ripple and integrated LastMile with Ripple. Now, LastMile users can remit with the efficiency of Ripple’s strong and secure blockchain technology.</p><a class="read-more-btn" href="#">Read More <i  class="fas fa-arrow-right"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                            <div class="single-blog-post">
+                                <div class="blog-image">
+                                    <a href="#"><img alt="image" src="../../../assets/img/03_blog.jpg"></a>
+                                    <div class="date"><i class="fa fa-calendar-alt"></i> September 19, 2019 </div>
+                                </div>
+                                <div class="blog-post-content">
+                                    <h3><a  href="#">India NBFC Summit and Awards 2019</a></h3><span>by <a  href="#">admin</a></span>
+                                    <p>It attributes its 200 percent revenue growth to their robust offerings along with various tailormade but off the shelf, state of the art technology platforms</p><a class="read-more-btn" href="#">Read More <i  class="fas fa-arrow-right"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<app-footer></app-footer>  

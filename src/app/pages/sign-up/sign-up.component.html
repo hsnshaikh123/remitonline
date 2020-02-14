@@ -1,0 +1,50 @@
+<section class="signup-area">
+        <div class="row m-0">
+            <div class="col-lg-6 col-md-12 p-0">
+                <div class="signup-image"><img alt="image" src="assets/img/signup-bg.jpg"></div>
+            </div>
+            <div class="col-lg-6 col-md-12 p-0">
+                <div class="signup-content">
+                            <div class="closebox">
+                                <i class="fa fa-window-close" [routerLink]="['/home']" routerlinkactive="active"></i>
+                            </div>
+                    <div class="d-table">
+                        <div class="d-table-cell">
+                            <div class="signup-form">
+                                <div class="logo">
+                                    <a href="/"><img alt="logo" src="assets/img/remi-online-logo.png"></a>
+                                </div>
+                                <h3>Open up your RemitOnline Account now</h3>
+                                <p>Already signed up? <a [routerLink]="['/signin']" routerlinkactive="active">Log in</a></p>
+                                <form [formGroup]="signupform" (ngSubmit)="onSubmit()">
+                                    <div class="form-group">
+                                        
+
+                                        <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                                            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                                <div *ngIf="f.email.errors.required">Email is required</div>
+                                                <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                                            </div>
+
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                                        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                                            <div *ngIf="f.password.errors.required">Password is required</div>
+                                            <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" type="submit">Sign In</button>
+                                    <div class="connect-with-social"><span>Or</span>
+                                        <button class="facebook" type="submit"><i class="fab fa-facebook-square"></i> Connect with Facebook</button>
+                                        <button class="google" type="submit"><i class="fab fa-google"></i> Connect with Google</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
